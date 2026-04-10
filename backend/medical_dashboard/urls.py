@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/auth/', include('users.urls')),
     path('api/patients/', include('patients.urls')),
+     path('api/media/', include('media_files.urls')),
 ]
 
 if settings.DEBUG:

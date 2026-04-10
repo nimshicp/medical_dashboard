@@ -37,19 +37,22 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'rest_framework',
-    'django_filters',
     'users',
     'patients',
     'media_files',
-    'common',
+    
 ]
 
 AUTH_USER_MODEL = 'users.User'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -90,11 +93,26 @@ from datetime import timedelta
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),   
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-
     'AUTH_HEADER_TYPES': ('Bearer',),
-
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
 }
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+]
+CORS_ALLOW_CREDENTIALS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+]
+
+JWT_COOKIE_NAME = 'refresh_token'
+JWT_COOKIE_HTTP_ONLY = True
+JWT_COOKIE_SECURE = False
+JWT_COOKIE_SAMESITE = 'Lax'
+JWT_COOKIE_PATH = '/'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
