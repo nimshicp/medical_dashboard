@@ -37,3 +37,15 @@ class PatientViewSet(ModelViewSet):
             qs = qs.filter(created_at__date=date)
 
         return qs.distinct()
+        
+    def perform_create(self, serializer):
+        user = self.request.user
+
+    
+        if user.role == 'doctor':
+            serializer.save(doctor=user)
+
+        elif user.role == 'admin':
+            serializer.save()
+
+        

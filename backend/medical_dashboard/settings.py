@@ -76,7 +76,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'medical_dashboard.wsgi.application'
 
-from datetime import timedelta
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -84,6 +84,17 @@ REST_FRAMEWORK = {
     ),
 }
 
+
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),   
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+
+    'AUTH_HEADER_TYPES': ('Bearer',),
+
+    'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
+}
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
