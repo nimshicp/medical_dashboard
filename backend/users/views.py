@@ -3,7 +3,7 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .serializers import RegisterSerializer, LoginSerializer
+from .serializers import RegisterSerializer, LoginSerializer, DoctorListSerializer
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.exceptions import TokenError
@@ -121,7 +121,10 @@ class MeAPIView(APIView):
     def get(self, request):
         return Response(
             {
+                "id": request.user.id,
+                "email": request.user.email,
                 "username": request.user.username,
+                "role": request.user.role,
                 "is_staff": request.user.is_staff,
             }
         )
@@ -240,3 +243,12 @@ class ResetPasswordAPIView(APIView):
         user.save()
 
         return Response({"message": "Password reset successful"})
+
+
+class DoctorListAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        doctors = User.objects.filter(role="doctor").order_by("username")
+        serializer = DoctorListSerializer(doctors, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)

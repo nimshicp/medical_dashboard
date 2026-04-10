@@ -32,3 +32,10 @@ class LoginSerializer(serializers.Serializer):
             raise AuthenticationFailed("Invalid credentials")
 
         return {"user": user}
+
+
+class DoctorListSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ["id", "username", "email", "role"]

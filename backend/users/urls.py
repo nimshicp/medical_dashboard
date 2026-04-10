@@ -7,6 +7,7 @@ from .views import (
     MeAPIView,
     ForgotPasswordAPIView,
     ResetPasswordAPIView,
+    DoctorListAPIView,
 )
 
 urlpatterns = [
@@ -17,4 +18,5 @@ urlpatterns = [
     path('me/', MeAPIView.as_view(), name='me'),
     path('forgot-password/', ForgotPasswordAPIView.as_view(), name='forgot_password'),
     path('reset-password/<uid>/<token>/', ResetPasswordAPIView.as_view(), name='reset_password'),
+    path('doctors/', DoctorListAPIView.as_view(), name='doctors_list'),
 ]
