@@ -7,7 +7,6 @@ from .serializers import RegisterSerializer, LoginSerializer, DoctorListSerializ
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.exceptions import TokenError
-from rest_framework.exceptions import AuthenticationFailed
 
 from django.conf import settings
 from .models import User
@@ -16,32 +15,33 @@ from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.core.mail import send_mail
+from django.core.mail import BadHeaderError
 
 
 
 class RegisterAPIView(APIView):
     permission_classes = [AllowAny]
 
-   
     def post(self, request):
         serializer = RegisterSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
 
-        #  SEND EMAIL
-        # send_mail(
-        #     "Welcome 🎉",
-        #     f"Hi {user.username}, your account was created successfully!",
-        #     settings.EMAIL_HOST_USER,
-        #     [user.email],
-        #     fail_silently=False,
-        # )
+        try:
+            send_mail(
+                "Welcome",
+                f"Hi {user.username}, your account was created successfully!",
+                getattr(settings, "DEFAULT_FROM_EMAIL", "nimshicp2003@gmail.com"),
+                [user.email],
+                fail_silently=True,
+            )
+        except Exception:
+            pass
 
         return Response(
             {"message": "User registered successfully"},
             status=status.HTTP_201_CREATED
         )
-
 
 class LoginAPIView(APIView):
     permission_classes = [AllowAny]
@@ -130,23 +130,6 @@ class MeAPIView(APIView):
         )
 
 
-# class ProfileAPIView(APIView):
-
-#     permission_classes = [IsAuthenticated]
-
-#     def get(self, request):
-#         serializer = ProfileSerializer(request.user)
-#         return Response(serializer.data)
-
-#     def patch(self, request):
-
-#         serializer = ProfileSerializer(request.user, data=request.data, partial=True)
-
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response(serializer.data)
-
-#         return Response(serializer.errors)
 
 
 # class GoogleLoginAPIView(APIView):
@@ -187,63 +170,87 @@ class MeAPIView(APIView):
 
 
 class ForgotPasswordAPIView(APIView):
-
     permission_classes = [AllowAny]
 
     def post(self, request):
-
         email = request.data.get("email")
+
+        if not email:
+            return Response({"error": "Email is required"}, status=400)
 
         try:
             user = User.objects.get(email=email)
         except User.DoesNotExist:
-            return Response(
-                {"error": "User not found"}, status=status.HTTP_404_NOT_FOUND
-            )
+            return Response({"error": "User not found"}, status=404)
 
+        
         token = PasswordResetTokenGenerator().make_token(user)
         uid = urlsafe_base64_encode(force_bytes(user.id))
 
+        
         reset_link = f"http://localhost:5173/reset-password/{uid}/{token}"
 
-        send_mail(
-            "Password Reset",
-            f"Click the link to reset your password:\n{reset_link}",
-            settings.EMAIL_HOST_USER,
-            [email],
-            fail_silently=False,
-        )
+        
+        print("RESET LINK:", reset_link)
 
-        return Response({"message": "Password reset link sent to email"})
+        try:
+            send_mail(
+                subject="Password Reset",
+                message=f"Click the link to reset your password:\n{reset_link}",
+                from_email=settings.EMAIL_HOST_USER,   
+                recipient_list=[email],
+                fail_silently=False,
+            )
+        except BadHeaderError:
+            return Response({"error": "Invalid email header"}, status=500)
+        except Exception as e:
+            return Response(
+                {"error": f"Email failed: {str(e)}"},
+                status=500
+            )
+
+        return Response({"message": "Reset link sent to your email"})
+
+
+from django.utils.http import urlsafe_base64_decode
+from django.contrib.auth.tokens import PasswordResetTokenGenerator
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from .models import User
 
 
 class ResetPasswordAPIView(APIView):
-
     permission_classes = [AllowAny]
 
     def post(self, request, uid, token):
-
         password = request.data.get("password")
+
+        if not password:
+            return Response({"error": "Password is required"}, status=400)
 
         try:
             user_id = urlsafe_base64_decode(uid).decode()
             user = User.objects.get(id=user_id)
-        except:
-            return Response(
-                {"error": "Invalid user"}, status=status.HTTP_400_BAD_REQUEST
-            )
+        except Exception:
+            return Response({"error": "Invalid user"}, status=400)
+
+        
+        print("USER ID:", user_id)
+        print("TOKEN RECEIVED:", token)
+
 
         if not PasswordResetTokenGenerator().check_token(user, token):
             return Response(
                 {"error": "Invalid or expired token"},
-                status=status.HTTP_400_BAD_REQUEST,
+                status=400
             )
 
+        # Set new password
         user.set_password(password)
         user.save()
 
         return Response({"message": "Password reset successful"})
-
 
 class DoctorListAPIView(APIView):
     permission_classes = [IsAuthenticated]
@@ -252,3 +259,4 @@ class DoctorListAPIView(APIView):
         doctors = User.objects.filter(role="doctor").order_by("username")
         serializer = DoctorListSerializer(doctors, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+

@@ -9,7 +9,7 @@ const Login = () => {
   const { login, user } = useContext(AuthContext);
   const navigate = useNavigate();
 
-  // If user is already logged in, block access to Login page
+  
   if (user) {
     return <Navigate to="/" replace />;
   }

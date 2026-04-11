@@ -1,8 +1,6 @@
 // api/patientApi.js
-import axiosInstance from "./axios";
-
-
+import api from "./api";
 
 export const getPatients = (filters = {}) => {
-  return axiosInstance.get("/patients/", { params: filters });
+  return api.get("/patients/", { params: filters });
 };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { UploadCloud, File, Image as ImageIcon, FileText, Download, Trash2, X } from 'lucide-react';
-import api from '../services/api';
+import api from '../api/api';
 
 const MediaFiles = () => {
   const [files, setFiles] = useState([]);

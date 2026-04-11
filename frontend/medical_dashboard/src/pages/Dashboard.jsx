@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Activity, Users, FileText } from 'lucide-react';
-import api from '../services/api';
+import api from '../api/api';
 
 const StatCard = ({ title, value, icon: Icon }) => (
   <div className="glass-card p-6 relative overflow-hidden group">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Search, Plus, MoreVertical, Filter, X, Edit, Trash2 } from 'lucide-react';
-import api from '../services/api';
+import api from '../api/api';
 import { AuthContext } from '../context/AuthContext';
 
 const Patients = () => {

@@ -1,14 +1,13 @@
-// api/mediaApi.js
-import axiosInstance from "./axios";
+import api from "./api";
 
-// Get media for a patient
+
 export const getMedia = (patientId) => {
-  return axiosInstance.get(`/media/?patient=${patientId}`);
+  return api.get(`/media/?patient=${patientId}`);
 };
 
-// Upload media
+
 export const uploadMedia = (formData) => {
-  return axiosInstance.post("/media/", formData, {
+  return api.post("/media/", formData, {
     headers: {
       "Content-Type": "multipart/form-data",
     },
