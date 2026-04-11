@@ -91,7 +91,7 @@ npm run dev
 
 ## ?? Running with Docker
 
-The easiest way to orchestrate the API, Worker, Redis, and Postgres services simultaneously.
+The project can be run manually, but using Docker Compose is highly recommended as it automatically configures the Database, Redis, the API, and the Workers in a synced environment.
 
 1.  **Build and Start Containers:**
     ```bash

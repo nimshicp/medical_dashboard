@@ -2,6 +2,10 @@
 
 This file documents the architecture used in this assignment.
 
+## Architecture Image
+
+![Medical Dashboard System Architecture](architecture/medical-dashboard-system-architecture.png)
+
 ## 1) High-Level Architecture Diagram
 
 ```mermaid
@@ -84,4 +88,3 @@ flowchart LR
 ## 6) Known Boundaries
 
 - Current setup is optimized for local development and assignment evaluation.
-- Production hardening (TLS termination, secrets manager, object storage, worker autoscaling) is intentionally out of scope.
