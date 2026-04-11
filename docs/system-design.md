@@ -6,26 +6,10 @@ This file documents the architecture used in this assignment.
 
 ![Medical Dashboard System Architecture](architecture/medical-dashboard-system-architecture.png)
 
-## 1) High-Level Architecture Diagram
 
-```mermaid
-flowchart LR
-    U["User Browser<br/>React + Vite"] -->|HTTPS + JWT access token<br/>refresh cookie| API[Django REST API]
-
-    API -->|ORM| PG[(PostgreSQL)]
-    API -->|enqueue task| R[(Redis Broker)]
-    R -->|task messages| C[Celery Worker]
-    C -->|update processing status| PG
-    API --> FS["Media Files Storage<br/>backend/media"]
-    C --> FS
-
-    subgraph Backend Services
-        API
-        C
-    end
 ```
 
-## 2) Component Responsibilities
+## 1) Component Responsibilities
 
 - React frontend
   - Handles login/logout, patient listing/filtering, patient details, and media upload.
@@ -51,7 +35,7 @@ flowchart LR
 - File storage (`backend/media`)
   - Stores uploaded patient files.
 
-## 3) Core Runtime Flows
+## 2) Core Runtime Flows
 
 ### A. Authentication Flow
 1. User logs in from React.
@@ -68,7 +52,7 @@ flowchart LR
 5. Worker updates media status in database.
 6. UI reads updated status via API.
 
-## 4) Security and Access Control
+## 3) Security and Access Control
 
 - Role-based access:
   - `admin`: full patient visibility and doctor assignment.
@@ -76,7 +60,7 @@ flowchart LR
 - Refresh token uses HttpOnly cookie to reduce XSS exposure.
 - CORS/CSRF trusted origins are configured for local frontend hosts.
 
-## 5) Deployment Topology (as submitted)
+## 4) Deployment Topology (as submitted)
 
 - Docker Compose services:
   - `backend` (Django API)
@@ -85,6 +69,6 @@ flowchart LR
   - `worker` (Celery)
 - Frontend is run separately via Vite dev server in this assignment.
 
-## 6) Known Boundaries
+## 5) Known Boundaries
 
 - Current setup is optimized for local development and assignment evaluation.
