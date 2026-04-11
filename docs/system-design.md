@@ -6,9 +6,6 @@ This file documents the architecture used in this assignment.
 
 ![Medical Dashboard System Architecture](architecture/medical-dashboard-system-architecture.png)
 
-
-```
-
 ## 1) Component Responsibilities
 
 - React frontend
