@@ -11,6 +11,8 @@ services:
     depends_on:
       - db
       - redis
+    env_file:                     
+      - ../backend/.env.docker
 
   db:
     image: postgres:15
@@ -20,7 +22,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
-      - "5432:5432"
+      - "5433:5432"
 
   redis:
     image: redis:7
@@ -37,3 +39,5 @@ services:
     depends_on:
       - backend
       - redis
+    env_file:                     
+      - ../backend/.env.docker

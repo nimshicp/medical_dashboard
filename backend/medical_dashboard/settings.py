@@ -21,9 +21,26 @@ def load_env_file(env_path):
         value = value.strip().strip('"').strip("'")
         os.environ.setdefault(key, value)
 
+
+def resolve_env_file(base_dir):
+    """Pick one env file to avoid mixing docker/local values."""
+    configured_env = os.getenv("MEDDASH_ENV_FILE")
+    if configured_env:
+        candidate = Path(configured_env)
+        if not candidate.is_absolute():
+            candidate = base_dir / configured_env
+        return candidate
+
+    for name in (".env.local", ".env", ".env.docker"):
+        candidate = base_dir / name
+        if candidate.exists():
+            return candidate
+
+    return base_dir / ".env"
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-load_env_file(BASE_DIR / ".env")
+load_env_file(resolve_env_file(BASE_DIR))
 LOG_DIR = BASE_DIR / "logs"
 LOG_DIR.mkdir(exist_ok=True)
 
@@ -61,7 +78,7 @@ INSTALLED_APPS = [
 
 AUTH_USER_MODEL = 'users.User'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL", 'redis://redis:6379/0')
+CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL", 'redis://localhost:6379/0')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -145,7 +162,7 @@ DATABASES = {
         'USER': os.getenv('DB_USER', 'postgres'),
         'PASSWORD': os.getenv('DB_PASSWORD', ''),
         'HOST': os.getenv('DB_HOST', 'localhost'),
-        'PORT': os.getenv('DB_PORT', '5433'),
+        'PORT': os.getenv('DB_PORT', '5432'),
     }
 }
 

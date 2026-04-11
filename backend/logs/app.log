@@ -169,3 +169,926 @@
 [2026-04-11 06:46:07,291] INFO app request method=POST path=/api/auth/logout/ status=200 duration_ms=24.02 user_id=2
 [2026-04-11 06:46:07,292] INFO django.server "POST /api/auth/logout/ HTTP/1.1" 200 37
 [2026-04-11 06:46:07,292] INFO django.server "POST /api/auth/logout/ HTTP/1.1" 200 37
+[2026-04-11 14:16:02,684] INFO app request method=GET path=/ws/notifications/ status=404 duration_ms=150.63 user_id=None
+[2026-04-11 14:16:02,786] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:02,786] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:02,837] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:02,837] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:02,674] INFO app request method=GET path=/ws/notifications/ status=404 duration_ms=3.71 user_id=None
+[2026-04-11 14:16:02,675] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:02,675] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:02,676] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:02,676] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:04,651] INFO app request method=GET path=/ws/notifications/ status=404 duration_ms=2.98 user_id=None
+[2026-04-11 14:16:04,652] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:04,652] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:04,653] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:04,653] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:08,662] INFO app request method=GET path=/ws/notifications/ status=404 duration_ms=7.26 user_id=None
+[2026-04-11 14:16:08,663] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:08,663] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:08,665] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:08,665] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:17,110] INFO app request method=GET path=/ws/notifications/ status=404 duration_ms=3.13 user_id=None
+[2026-04-11 14:16:17,111] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:17,111] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:17,115] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:17,115] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:27,691] INFO app request method=GET path=/ws/notifications/ status=404 duration_ms=5.03 user_id=None
+[2026-04-11 14:16:27,693] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:27,693] WARNING django.request Not Found: /ws/notifications/
+[2026-04-11 14:16:27,695] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 14:16:27,695] WARNING django.server "GET /ws/notifications/ HTTP/1.1" 404 2867
+[2026-04-11 21:02:44,060] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 21:02:44,060] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 16:57:21,420] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 16:57:21,420] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:12:41,029] INFO django.utils.autoreload /app/medical_dashboard/settings.py changed, reloading.
+[2026-04-11 17:12:41,029] INFO django.utils.autoreload /app/medical_dashboard/settings.py changed, reloading.
+[2026-04-11 17:12:46,899] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:12:46,899] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:13:40,358] INFO django.utils.autoreload /app/medical_dashboard/settings.py changed, reloading.
+[2026-04-11 17:13:40,358] INFO django.utils.autoreload /app/medical_dashboard/settings.py changed, reloading.
+[2026-04-11 17:13:44,221] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:13:44,221] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:26:46,401] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:26:46,401] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 22:59:48,826] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 22:59:48,826] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 23:06:29,851] INFO app request method=POST path=/api/auth/register/ status=400 duration_ms=539.4 user_id=None
+[2026-04-11 23:06:29,881] WARNING django.request Bad Request: /api/auth/register/
+[2026-04-11 23:06:29,881] WARNING django.request Bad Request: /api/auth/register/
+[2026-04-11 23:06:29,887] WARNING django.server "POST /api/auth/register/ HTTP/1.1" 400 42
+[2026-04-11 23:06:29,887] WARNING django.server "POST /api/auth/register/ HTTP/1.1" 400 42
+[2026-04-11 23:06:45,185] INFO app request method=POST path=/api/auth/register/ status=400 duration_ms=188.64 user_id=None
+[2026-04-11 23:06:45,187] WARNING django.request Bad Request: /api/auth/register/
+[2026-04-11 23:06:45,187] WARNING django.request Bad Request: /api/auth/register/
+[2026-04-11 23:06:45,189] WARNING django.server "POST /api/auth/register/ HTTP/1.1" 400 50
+[2026-04-11 23:06:45,189] WARNING django.server "POST /api/auth/register/ HTTP/1.1" 400 50
+[2026-04-11 23:07:09,954] INFO app request method=POST path=/api/auth/login/ status=200 duration_ms=1566.25 user_id=None
+[2026-04-11 23:07:09,958] INFO django.server "POST /api/auth/login/ HTTP/1.1" 200 285
+[2026-04-11 23:07:09,958] INFO django.server "POST /api/auth/login/ HTTP/1.1" 200 285
+[2026-04-11 17:37:48,207] INFO django.server "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[2026-04-11 17:37:48,207] INFO django.server "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+[2026-04-11 17:37:49,579] ERROR django.request Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 55, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/serializers.py", line 26, in validate
+    user = authenticate(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+[2026-04-11 17:37:49,579] ERROR django.request Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 55, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/serializers.py", line 26, in validate
+    user = authenticate(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+[2026-04-11 17:37:49,631] INFO app request method=POST path=/api/auth/login/ status=500 duration_ms=1380.31 user_id=None
+[2026-04-11 17:37:49,659] ERROR django.server "POST /api/auth/login/ HTTP/1.1" 500 186797
+[2026-04-11 17:37:49,659] ERROR django.server "POST /api/auth/login/ HTTP/1.1" 500 186797
+[2026-04-11 17:37:49,741] ERROR django.request Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 55, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/serializers.py", line 26, in validate
+    user = authenticate(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+[2026-04-11 17:37:49,741] ERROR django.request Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 55, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/serializers.py", line 26, in validate
+    user = authenticate(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+[2026-04-11 17:37:49,761] INFO app request method=POST path=/api/auth/login/ status=500 duration_ms=206.08 user_id=None
+[2026-04-11 17:37:49,778] ERROR django.server "POST /api/auth/login/ HTTP/1.1" 500 186797
+[2026-04-11 17:37:49,778] ERROR django.server "POST /api/auth/login/ HTTP/1.1" 500 186797
+[2026-04-11 17:38:13,183] ERROR django.request Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 55, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/serializers.py", line 26, in validate
+    user = authenticate(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+[2026-04-11 17:38:13,183] ERROR django.request Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 55, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/serializers.py", line 26, in validate
+    user = authenticate(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: ..._user"."is_staff", "users_user"."created_at" FROM "users_use...
+                                                             ^
+
+[2026-04-11 17:38:13,199] INFO app request method=POST path=/api/auth/login/ status=500 duration_ms=241.12 user_id=None
+[2026-04-11 17:38:13,203] ERROR django.server "POST /api/auth/login/ HTTP/1.1" 500 186817
+[2026-04-11 17:38:13,203] ERROR django.server "POST /api/auth/login/ HTTP/1.1" 500 186817
+[2026-04-11 17:41:17,736] INFO django.server "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+[2026-04-11 17:41:17,736] INFO django.server "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+[2026-04-11 17:41:18,479] ERROR django.request Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: SELECT 1 AS "a" FROM "users_user" WHERE "users_user"."email"...
+                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 31, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 501, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 757, in run_validation
+    return super().run_validation(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 539, in run_validation
+    self.run_validators(value)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 551, in run_validators
+    validator(value, self)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/validators.py", line 86, in __call__
+    if qs_exists(queryset):
+       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/validators.py", line 23, in qs_exists
+    return queryset.exists()
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1296, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 674, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1591, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: SELECT 1 AS "a" FROM "users_user" WHERE "users_user"."email"...
+                             ^
+
+[2026-04-11 17:41:18,479] ERROR django.request Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: SELECT 1 AS "a" FROM "users_user" WHERE "users_user"."email"...
+                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 31, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 501, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 757, in run_validation
+    return super().run_validation(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 539, in run_validation
+    self.run_validators(value)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/fields.py", line 551, in run_validators
+    validator(value, self)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/validators.py", line 86, in __call__
+    if qs_exists(queryset):
+       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/validators.py", line 23, in qs_exists
+    return queryset.exists()
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1296, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py", line 674, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1591, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: SELECT 1 AS "a" FROM "users_user" WHERE "users_user"."email"...
+                             ^
+
+[2026-04-11 17:41:18,544] INFO app request method=POST path=/api/auth/register/ status=500 duration_ms=773.02 user_id=None
+[2026-04-11 17:41:18,550] ERROR django.server "POST /api/auth/register/ HTTP/1.1" 500 180559
+[2026-04-11 17:41:18,550] ERROR django.server "POST /api/auth/register/ HTTP/1.1" 500 180559
+[2026-04-11 17:50:12,791] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:50:12,791] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:52:35,793] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:52:35,793] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:54:13,262] INFO app request method=POST path=/api/auth/register/ status=201 duration_ms=1393.88 user_id=None
+[2026-04-11 17:54:13,298] INFO django.server "POST /api/auth/register/ HTTP/1.1" 201 42
+[2026-04-11 17:54:13,298] INFO django.server "POST /api/auth/register/ HTTP/1.1" 201 42
+[2026-04-11 17:54:35,486] INFO app request method=POST path=/api/auth/login/ status=200 duration_ms=1362.3 user_id=None
+[2026-04-11 17:54:35,490] INFO django.server "POST /api/auth/login/ HTTP/1.1" 200 286
+[2026-04-11 17:54:35,490] INFO django.server "POST /api/auth/login/ HTTP/1.1" 200 286
+[2026-04-11 17:54:35,554] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 17:54:35,554] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 17:54:35,733] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=171.47 user_id=1
+[2026-04-11 17:54:35,735] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 17:54:35,735] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 17:54:35,851] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 17:54:35,851] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 17:54:35,895] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 17:54:35,895] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 17:54:35,909] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 17:54:35,909] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 17:54:35,936] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 17:54:35,936] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 17:54:36,077] INFO app request method=GET path=/api/patients/ status=200 duration_ms=216.29 user_id=1
+[2026-04-11 17:54:36,081] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:54:36,081] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:54:36,085] INFO app request method=GET path=/api/media/ status=200 duration_ms=119.54 user_id=1
+[2026-04-11 17:54:36,089] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:54:36,089] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:54:36,188] INFO app request method=GET path=/api/patients/ status=200 duration_ms=59.7 user_id=1
+[2026-04-11 17:54:36,191] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:54:36,191] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:54:36,236] INFO app request method=GET path=/api/media/ status=200 duration_ms=140.56 user_id=1
+[2026-04-11 17:54:36,253] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:54:36,253] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:54:39,612] INFO django.server "OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+[2026-04-11 17:54:39,612] INFO django.server "OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+[2026-04-11 17:54:39,648] INFO app request method=POST path=/api/auth/logout/ status=200 duration_ms=31.15 user_id=1
+[2026-04-11 17:54:39,651] INFO django.server "POST /api/auth/logout/ HTTP/1.1" 200 37
+[2026-04-11 17:54:39,651] INFO django.server "POST /api/auth/logout/ HTTP/1.1" 200 37
+[2026-04-11 23:27:36,425] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 23:27:36,425] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 23:27:47,395] INFO app request method=GET path=/ status=404 duration_ms=412.37 user_id=None
+[2026-04-11 23:27:47,400] WARNING django.request Not Found: /
+[2026-04-11 23:27:47,400] WARNING django.request Not Found: /
+[2026-04-11 23:27:47,406] WARNING django.server "GET / HTTP/1.1" 404 2798
+[2026-04-11 23:27:47,406] WARNING django.server "GET / HTTP/1.1" 404 2798
+[2026-04-11 23:27:47,836] INFO app request method=GET path=/favicon.ico status=404 duration_ms=18.24 user_id=None
+[2026-04-11 23:27:47,851] WARNING django.request Not Found: /favicon.ico
+[2026-04-11 23:27:47,851] WARNING django.request Not Found: /favicon.ico
+[2026-04-11 23:27:47,892] WARNING django.server "GET /favicon.ico HTTP/1.1" 404 2849
+[2026-04-11 23:27:47,892] WARNING django.server "GET /favicon.ico HTTP/1.1" 404 2849
+[2026-04-11 23:28:06,988] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 23:28:06,988] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 17:58:30,590] INFO app request method=POST path=/api/auth/login/ status=200 duration_ms=944.67 user_id=None
+[2026-04-11 17:58:30,649] INFO django.server "POST /api/auth/login/ HTTP/1.1" 200 286
+[2026-04-11 17:58:30,649] INFO django.server "POST /api/auth/login/ HTTP/1.1" 200 286
+[2026-04-11 17:58:30,810] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=138.53 user_id=1
+[2026-04-11 17:58:30,817] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 17:58:30,817] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 17:58:31,194] INFO app request method=GET path=/api/media/ status=200 duration_ms=199.39 user_id=1
+[2026-04-11 17:58:31,196] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:31,196] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:31,243] INFO app request method=GET path=/api/patients/ status=200 duration_ms=228.01 user_id=1
+[2026-04-11 17:58:31,252] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:31,252] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:31,348] INFO app request method=GET path=/api/media/ status=200 duration_ms=103.2 user_id=1
+[2026-04-11 17:58:31,351] INFO app request method=GET path=/api/patients/ status=200 duration_ms=93.62 user_id=1
+[2026-04-11 17:58:31,351] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:31,352] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:31,351] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:31,352] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:33,665] INFO app request method=GET path=/api/media/ status=200 duration_ms=26.05 user_id=1
+[2026-04-11 17:58:33,668] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:33,668] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:33,699] INFO app request method=GET path=/api/media/ status=200 duration_ms=25.65 user_id=1
+[2026-04-11 17:58:33,701] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:33,701] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:33,736] INFO app request method=GET path=/api/patients/ status=200 duration_ms=102.66 user_id=1
+[2026-04-11 17:58:33,738] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:33,738] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:33,767] INFO app request method=GET path=/api/patients/ status=200 duration_ms=26.28 user_id=1
+[2026-04-11 17:58:33,768] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:33,768] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:36,451] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=54.21 user_id=1
+[2026-04-11 17:58:36,455] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 17:58:36,455] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 17:58:36,496] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=29.34 user_id=1
+[2026-04-11 17:58:36,499] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 17:58:36,499] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 17:58:36,619] INFO app request method=GET path=/api/patients/ status=200 duration_ms=30.57 user_id=1
+[2026-04-11 17:58:36,622] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:36,622] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:36,648] INFO app request method=GET path=/api/media/ status=200 duration_ms=56.76 user_id=1
+[2026-04-11 17:58:36,652] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:36,652] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:36,680] INFO app request method=GET path=/api/patients/ status=200 duration_ms=46.25 user_id=1
+[2026-04-11 17:58:36,685] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:36,685] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 17:58:36,711] INFO app request method=GET path=/api/media/ status=200 duration_ms=53.5 user_id=1
+[2026-04-11 17:58:36,713] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 17:58:36,713] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-12 00:27:02,996] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-12 00:27:02,996] INFO django.utils.autoreload Watching for file changes with StatReloader

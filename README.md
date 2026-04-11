@@ -1,200 +1,123 @@
-# MedDash
+# ?? Medical Dashboard System
 
-MedDash is a full-stack medical dashboard for managing users, patients, and medical media files.
+A high-performance, secure medical management platform built with **React + Vite** and **Django REST Framework**. This system handles sensitive patient records, role-based access control, and asynchronous media processing.
 
-It includes:
-- JWT authentication with refresh-token cookies
-- role-based access for `admin` and `doctor`
-- patient CRUD with doctor assignment
-- media upload with background processing via Celery
-- password reset flow
-- API request and error logging
+---
 
-## Tech Stack
+## ?? System Architecture
 
-### Backend
-- Django 5
-- Django REST Framework
-- SimpleJWT
-- PostgreSQL
-- Redis
-- Celery
+The project follows a **Decoupled Three-Tier Architecture** with a dedicated asynchronous processing layer.
 
-### Frontend
-- React
-- Vite
-- Axios
-- React Router
-- Tailwind CSS
+### **1. Component Diagram**
+Visualizes the high-level interaction between the frontend, API, message broker, and background workers.
 
-## Project Structure
 
-```text
-medical-dashboard/
-├── backend/                   # Django backend
-│   ├── medical_dashboard/     # Django project settings
-│   ├── users/                 # Authentication, roles, password reset
-│   ├── patients/              # Patient CRUD and filtering
-│   ├── media_files/           # Media upload and Celery processing
-│   ├── Dockerfile
-│   └── .env
-├── frontend/
-│   └── medical_dashboard/     # React frontend
-│       └── .env
-├── docker/
-│   └── docker-compose.yml     # Backend + Postgres + Redis + Celery
-└── README.md
+
+### **2. Technical Stack**
+* **Frontend:** React 18, Vite, Tailwind CSS, Axios (JWT persistence).
+* **Backend:** Python 3.10+, Django 5.x, Django REST Framework.
+* **Database:** PostgreSQL (Primary Relational Store).
+* **Task Queue:** Redis (Message Broker) + Celery (Background Worker).
+* **Observability:** Middleware-based logging to `logs/app.log` and `logs/error.log`.
+
+---
+
+## ?? Data Model (ER Diagram)
+
+The system uses **Django ORM** to manage the following relational structure:
+
+
+
+* **User:** Custom model supporting `admin` and `doctor` roles.
+* **Patient:** Encapsulates medical records; visibility is restricted by `doctor_id`.
+* **MediaFile:** Tracks processing states (`PENDING`, `PROCESSING`, `COMPLETED`).
+
+---
+
+## ?? Core Runtime Flows
+
+### **Authentication Sequence**
+The system implements a **Split-Token JWT Strategy**. The UI receives a short-lived Access Token in the JSON body and a long-lived Refresh Token via an `HttpOnly` cookie.
+
+
+
+### **Media Upload Async Flow**
+To ensure the UI remains responsive, file processing (metadata extraction) is offloaded to Celery workers.
+
+
+
+---
+
+## ?? Getting Started
+
+### **1. Infrastructure Setup (Prerequisites)**
+Before running the application, you must have **PostgreSQL** and **Redis** running.
+
+#### **Running Redis Locally**
+Redis is required as the message broker for Celery.
+* **macOS:** `brew install redis` then `brew services start redis`
+* **Ubuntu/WSL:** `sudo apt install redis-server` then `sudo service redis-server start`
+* **Verification:** Run `redis-cli ping`. It should respond with `PONG`.
+
+---
+
+### **2. Backend & Worker Setup**
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+# Database Initialization (CRITICAL STEP)
+python manage.py makemigrations
+python manage.py migrate 
+
+# Start Django API
+python manage.py runserver 8000
+
+# Start Celery Worker (In a separate terminal)
+celery -A medical_dashboard worker --loglevel=info
 ```
 
-## Features
-
-### Authentication
-- Register and login
-- Access token + refresh token flow
-- Refresh token stored in HttpOnly cookie
-- Forgot password and reset password flow
-- `/api/auth/me/` endpoint for current user profile
-
-### Roles
-- `doctor`
-  - can only see assigned patients
-  - patient creation auto-assigns to that doctor
-- `admin`
-  - can see all patients
-  - can assign doctors to patients
-  - can reassign doctors on patient edit
-
-### Patients
-- create, list, update, delete
-- filter by:
-  - name
-  - tag
-  - created date
-- tag support for each patient
-
-### Media Files
-- upload media to a patient
-- background processing with Celery
-- processing status updates
-
-### Observability
-- request logging middleware
-- file logging for app and error events
-- Celery task logging
-- logs written to `backend/logs/`
-
-## API Overview
-
-### Auth
-- `POST /api/auth/register/`
-- `POST /api/auth/login/`
-- `POST /api/auth/logout/`
-- `POST /api/auth/refresh/`
-- `GET /api/auth/me/`
-- `POST /api/auth/forgot-password/`
-- `POST /api/auth/reset-password/<uid>/<token>/`
-- `GET /api/auth/doctors/`
-
-### Patients
-- `GET /api/patients/`
-- `POST /api/patients/`
-- `GET /api/patients/<id>/`
-- `PATCH /api/patients/<id>/`
-- `DELETE /api/patients/<id>/`
-
-### Media
-- `GET /api/media/`
-- `POST /api/media/`
-
-## Environment Variables
-
-### Backend
-
-Important variables:
-- `DJANGO_SECRET_KEY`
-- `DJANGO_DEBUG`
-- `DJANGO_ALLOWED_HOSTS`
-- `DB_NAME`
-- `DB_USER`
-- `DB_PASSWORD`
-- `DB_HOST`
-- `DB_PORT`
-- `CELERY_BROKER_URL`
-- `EMAIL_BACKEND`
-- `DEFAULT_FROM_EMAIL`
-- `EMAIL_HOST`
-- `EMAIL_PORT`
-- `EMAIL_USE_TLS`
-- `EMAIL_HOST_USER`
-- `EMAIL_HOST_PASSWORD`
-
-### Frontend
-
-Important variables:
-- `VITE_API_URL`
-
-## Local Development
-
-### Backend
-From `backend/`:
-
+### **3. Frontend Setup**
 ```bash
-python manage.py migrate
-python manage.py runserver
-```
-
-### Frontend
-From `frontend/medical_dashboard/`:
-
-```bash
+cd frontend/medical_dashboard
 npm install
 npm run dev
 ```
+*Frontend runs at `http://localhost:5173`*
 
-### Celery Worker
-From `backend/`:
+---
 
-```bash
-celery -A medical_dashboard worker -l info
-```
+## ?? Running with Docker
 
-## Run With Docker
+The easiest way to orchestrate the API, Worker, Redis, and Postgres services simultaneously.
 
-From the `docker/` folder:
+1.  **Build and Start Containers:**
+    ```bash
+    docker-compose up --build
+    ```
+2.  **Run Migrations inside the Container:**
+    ```bash
+    docker-compose exec backend python manage.py migrate
+    ```
 
-```bash
-docker compose up --build
-```
+---
 
-Services started:
-- Django backend
-- PostgreSQL
-- Redis
-- Celery worker
+## ?? API Surface Reference
 
-## Logging
+| Endpoint | Method | Description |
+| :--- | :--- | :--- |
+| `/api/auth/login/` | `POST` | Get access token + Refresh cookie. |
+| `/api/auth/refresh/` | `POST` | Refresh access token using cookie. |
+| `/api/patients/` | `GET/POST` | Patient CRUD (Filtered by Role). |
+| `/api/media/` | `POST` | Upload file/URL (Triggers Celery). |
+| `/admin/` | `GET` | Django Admin interface. |
 
-Application logs are stored in:
-- `backend/logs/app.log`
-- `backend/logs/error.log`
+---
 
-Logged events include:
-- API requests
-- auth flow warnings and failures
-- patient creation events
-- media upload events
-- background task execution and failures
+## ?? Important Troubleshooting
 
-## Notes
-
-- Refresh tokens are cookie-based and not exposed to frontend JavaScript.
-- Admin users must assign a doctor when creating a patient.
-- Docker compose file lives in `docker/`, so run compose from there or use `-f docker/docker-compose.yml`.
-
-## Future Improvements
-
-- add production-ready WSGI/ASGI server setup
-- add frontend Docker service
-- add test coverage
-- add OpenAPI/Swagger usage docs
-- add deployment guide
+* **Missing Tables Error:** If you encounter `relation "users_user" does not exist`, you **must** run `python manage.py migrate`. This usually happens when the database is fresh or the custom user model hasn't been initialized.
+* **Redis Connection:** If media uploads stay in `PENDING` or throw an error, ensure Redis is running on port `6379`.
+* **CORS Issues:** If the frontend can't talk to the API, ensure `CORS_ALLOWED_ORIGINS` in `settings.py` includes `http://localhost:5173`. add this to readme without changing any content
