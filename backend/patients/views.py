@@ -1,4 +1,5 @@
-# patients/views.py
+import logging
+logger = logging.getLogger("app")
 
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated
@@ -19,7 +20,7 @@ class PatientViewSet(ModelViewSet):
         user = self.request.user
         qs = Patient.objects.all()
 
-        #  RBAC (Role-Based Access)
+        
         if user.role == 'doctor':
             qs = qs.filter(doctor=user)
 
@@ -43,12 +44,15 @@ class PatientViewSet(ModelViewSet):
         user = self.request.user
 
         if user.role == 'doctor':
-            serializer.save(doctor=user)
+            patient = serializer.save(doctor=user)
+            logger.info("patient_created patient_id=%s actor_id=%s assigned_doctor_id=%s", patient.id, user.id, user.id)
 
         elif user.role == 'admin':
             doctor = serializer.validated_data.get('doctor')
             if not doctor:
+                logger.warning("patient_create_missing_doctor actor_id=%s", user.id)
                 raise ValidationError({"doctor_id": "Admin must assign a doctor."})
-            serializer.save()
+            patient = serializer.save()
+            logger.info("patient_created patient_id=%s actor_id=%s assigned_doctor_id=%s", patient.id, user.id, patient.doctor_id)
 
         

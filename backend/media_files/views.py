@@ -1,3 +1,6 @@
+import logging
+logger = logging.getLogger("app")
+
 from rest_framework.viewsets import ModelViewSet
 from .models import MediaFile
 from .serializers import MediaFileSerializer
@@ -11,7 +14,7 @@ class MediaFileViewSet(ModelViewSet):
 
     def perform_create(self, serializer):
         media = serializer.save()
+        logger.info("media_uploaded media_id=%s actor_id=%s", media.id, self.request.user.id)
 
-    
-       
         process_media_file.delay(media.id)
+        logger.info("media_processing_queued media_id=%s actor_id=%s", media.id, self.request.user.id)

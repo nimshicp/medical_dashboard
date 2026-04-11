@@ -1,3 +1,6 @@
+import logging
+logger = logging.getLogger("app")
+
 from django.shortcuts import render
 
 from rest_framework.views import APIView
@@ -19,6 +22,7 @@ from django.core.mail import BadHeaderError
 
 
 
+
 class RegisterAPIView(APIView):
     permission_classes = [AllowAny]
 
@@ -36,7 +40,7 @@ class RegisterAPIView(APIView):
                 fail_silently=True,
             )
         except Exception:
-            pass
+            logger.exception("welcome_email_failed email=%s user_id=%s", user.email, user.id)
 
         return Response(
             {"message": "User registered successfully"},
@@ -86,6 +90,7 @@ class RefreshTokenAPIView(APIView):
         refresh_token = request.COOKIES.get(settings.JWT_COOKIE_NAME)
 
         if not refresh_token:
+            logger.warning("refresh_token_missing")
             return Response(
                 {"error": "Refresh token missing"}, status=status.HTTP_401_UNAUTHORIZED
             )
@@ -97,6 +102,7 @@ class RefreshTokenAPIView(APIView):
             return Response({"access": access_token})
 
         except TokenError:
+            logger.warning("refresh_token_invalid")
             return Response(
                 {"error": "Invalid refresh token"}, status=status.HTTP_401_UNAUTHORIZED
             )
@@ -181,43 +187,40 @@ class ForgotPasswordAPIView(APIView):
         try:
             user = User.objects.get(email=email)
         except User.DoesNotExist:
+            logger.warning("forgot_password_user_not_found email=%s", email)
             return Response({"error": "User not found"}, status=404)
 
         
         token = PasswordResetTokenGenerator().make_token(user)
         uid = urlsafe_base64_encode(force_bytes(user.id))
 
-        
         reset_link = f"http://localhost:5173/reset-password/{uid}/{token}"
-
-        
-        print("RESET LINK:", reset_link)
+        logger.info("forgot_password_requested email=%s user_id=%s", email, user.id)
 
         try:
             send_mail(
                 subject="Password Reset",
                 message=f"Click the link to reset your password:\n{reset_link}",
-                from_email=settings.EMAIL_HOST_USER,   
+                from_email=getattr(settings, "DEFAULT_FROM_EMAIL", settings.EMAIL_HOST_USER),
                 recipient_list=[email],
                 fail_silently=False,
             )
         except BadHeaderError:
+            logger.exception("forgot_password_bad_header email=%s", email)
             return Response({"error": "Invalid email header"}, status=500)
         except Exception as e:
+            logger.exception("forgot_password_email_failed email=%s", email)
             return Response(
                 {"error": f"Email failed: {str(e)}"},
                 status=500
             )
 
+        logger.info("forgot_password_email_sent email=%s user_id=%s", email, user.id)
+
         return Response({"message": "Reset link sent to your email"})
 
 
-from django.utils.http import urlsafe_base64_decode
-from django.contrib.auth.tokens import PasswordResetTokenGenerator
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-from .models import User
+
 
 
 class ResetPasswordAPIView(APIView):
@@ -233,14 +236,11 @@ class ResetPasswordAPIView(APIView):
             user_id = urlsafe_base64_decode(uid).decode()
             user = User.objects.get(id=user_id)
         except Exception:
+            logger.exception("reset_password_invalid_user uid=%s", uid)
             return Response({"error": "Invalid user"}, status=400)
 
-        
-        print("USER ID:", user_id)
-        print("TOKEN RECEIVED:", token)
-
-
         if not PasswordResetTokenGenerator().check_token(user, token):
+            logger.warning("reset_password_invalid_token user_id=%s", user.id)
             return Response(
                 {"error": "Invalid or expired token"},
                 status=400
@@ -249,6 +249,7 @@ class ResetPasswordAPIView(APIView):
         # Set new password
         user.set_password(password)
         user.save()
+        logger.info("reset_password_success user_id=%s", user.id)
 
         return Response({"message": "Password reset successful"})
 
