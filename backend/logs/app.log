@@ -1092,3 +1092,374 @@ LINE 1: SELECT 1 AS "a" FROM "users_user" WHERE "users_user"."email"...
 [2026-04-11 17:58:36,713] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
 [2026-04-12 00:27:02,996] INFO django.utils.autoreload Watching for file changes with StatReloader
 [2026-04-12 00:27:02,996] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2026-04-11 20:08:22,473] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 20:08:22,475] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 20:08:22,509] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 20:08:22,488] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 20:08:22,473] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 20:08:22,475] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 20:08:22,509] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 20:08:22,488] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 20:08:22,847] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=289.17 user_id=None
+[2026-04-11 20:08:23,008] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 20:08:23,008] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 20:08:23,013] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 20:08:23,013] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 20:08:23,026] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=2.33 user_id=None
+[2026-04-11 20:08:23,027] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 20:08:23,027] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 20:08:23,030] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 20:08:23,030] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 20:08:23,082] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=4.51 user_id=None
+[2026-04-11 20:08:23,086] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 20:08:23,087] INFO django.server "OPTIONS /api/auth/refresh/ HTTP/1.1" 200 0
+[2026-04-11 20:08:23,086] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 20:08:23,087] INFO django.server "OPTIONS /api/auth/refresh/ HTTP/1.1" 200 0
+[2026-04-11 20:08:23,090] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 20:08:23,090] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 20:08:23,187] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=58.13 user_id=None
+[2026-04-11 20:08:23,188] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=41.73 user_id=None
+[2026-04-11 20:08:23,196] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 20:08:23,196] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 20:08:23,203] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 20:08:23,203] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 20:08:23,254] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=2.72 user_id=None
+[2026-04-11 20:08:23,255] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 20:08:23,255] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 20:08:23,259] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 20:08:23,259] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 20:08:23,292] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=1.18 user_id=None
+[2026-04-11 20:08:23,332] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=1.6 user_id=None
+[2026-04-11 20:08:23,360] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 20:08:23,360] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 20:08:23,382] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 20:08:23,382] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 20:08:24,150] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=867.05 user_id=1
+[2026-04-11 20:08:24,152] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 20:08:24,152] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 20:08:24,266] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=66.81 user_id=1
+[2026-04-11 20:08:24,268] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 20:08:24,268] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 20:08:24,438] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 20:08:24,450] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 20:08:24,451] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 20:08:24,451] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 20:08:24,438] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 20:08:24,450] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 20:08:24,451] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 20:08:24,451] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 20:08:24,912] INFO app request method=GET path=/api/media/ status=200 duration_ms=456.86 user_id=1
+[2026-04-11 20:08:24,920] INFO app request method=GET path=/api/patients/ status=200 duration_ms=458.11 user_id=1
+[2026-04-11 20:08:24,964] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 20:08:24,982] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 20:08:24,964] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 20:08:24,982] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 20:08:25,053] INFO app request method=GET path=/api/patients/ status=200 duration_ms=99.02 user_id=1
+[2026-04-11 20:08:25,107] INFO app request method=GET path=/api/media/ status=200 duration_ms=73.37 user_id=1
+[2026-04-11 20:08:25,113] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 20:08:25,127] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 20:08:25,113] INFO django.server "GET /api/patients/ HTTP/1.1" 200 2
+[2026-04-11 20:08:25,127] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 20:08:28,729] INFO django.server "OPTIONS /api/patients/? HTTP/1.1" 200 0
+[2026-04-11 20:08:28,729] INFO django.server "OPTIONS /api/patients/? HTTP/1.1" 200 0
+[2026-04-11 20:08:28,758] INFO app request method=GET path=/api/patients/ status=200 duration_ms=24.34 user_id=1
+[2026-04-11 20:08:28,759] INFO django.server "GET /api/patients/? HTTP/1.1" 200 2
+[2026-04-11 20:08:28,759] INFO django.server "GET /api/patients/? HTTP/1.1" 200 2
+[2026-04-11 20:08:47,407] INFO app patient_created patient_id=1 actor_id=1 assigned_doctor_id=1
+[2026-04-11 20:08:47,469] INFO app request method=POST path=/api/patients/ status=201 duration_ms=306.19 user_id=1
+[2026-04-11 20:08:47,470] INFO django.server "POST /api/patients/ HTTP/1.1" 201 161
+[2026-04-11 20:08:47,470] INFO django.server "POST /api/patients/ HTTP/1.1" 201 161
+[2026-04-11 20:08:47,526] INFO app request method=GET path=/api/patients/ status=200 duration_ms=47.0 user_id=1
+[2026-04-11 20:08:47,529] INFO django.server "GET /api/patients/? HTTP/1.1" 200 163
+[2026-04-11 20:08:47,529] INFO django.server "GET /api/patients/? HTTP/1.1" 200 163
+[2026-04-11 20:08:54,104] INFO app request method=GET path=/api/patients/ status=200 duration_ms=66.57 user_id=1
+[2026-04-11 20:08:54,109] INFO app request method=GET path=/api/media/ status=200 duration_ms=67.18 user_id=1
+[2026-04-11 20:08:54,115] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:08:54,118] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 20:08:54,115] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:08:54,118] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 20:08:54,189] INFO app request method=GET path=/api/patients/ status=200 duration_ms=67.65 user_id=1
+[2026-04-11 20:08:54,190] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:08:54,190] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:08:54,221] INFO app request method=GET path=/api/media/ status=200 duration_ms=86.44 user_id=1
+[2026-04-11 20:08:54,223] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 20:08:54,223] INFO django.server "GET /api/media/ HTTP/1.1" 200 2
+[2026-04-11 20:09:21,173] INFO app media_uploaded media_id=1 actor_id=1
+[2026-04-11 20:09:23,556] INFO app media_processing_queued media_id=1 actor_id=1
+[2026-04-11 20:09:23,558] INFO app request method=POST path=/api/media/ status=201 duration_ms=2618.52 user_id=1
+[2026-04-11 20:09:23,560] INFO django.server "POST /api/media/ HTTP/1.1" 201 227
+[2026-04-11 20:09:23,560] INFO django.server "POST /api/media/ HTTP/1.1" 201 227
+[2026-04-11 20:09:23,651] INFO app request method=GET path=/api/media/ status=200 duration_ms=79.84 user_id=1
+[2026-04-11 20:09:23,652] INFO django.server "GET /api/media/ HTTP/1.1" 200 229
+[2026-04-11 20:09:23,652] INFO django.server "GET /api/media/ HTTP/1.1" 200 229
+[2026-04-11 20:09:24,047] INFO app media_processing_started media_id=1
+[2026-04-11 20:09:29,912] INFO app media_processing_completed media_id=1 status=COMPLETED
+[2026-04-11 20:09:35,441] INFO app request method=GET path=/api/patients/ status=200 duration_ms=39.03 user_id=1
+[2026-04-11 20:09:35,442] INFO django.server "GET /api/patients/? HTTP/1.1" 200 163
+[2026-04-11 20:09:35,442] INFO django.server "GET /api/patients/? HTTP/1.1" 200 163
+[2026-04-11 20:09:36,253] INFO app request method=GET path=/api/media/ status=200 duration_ms=41.36 user_id=1
+[2026-04-11 20:09:36,262] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 20:09:36,262] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 20:09:36,279] INFO app request method=GET path=/api/patients/ status=200 duration_ms=64.05 user_id=1
+[2026-04-11 20:09:36,281] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:09:36,281] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:09:36,355] INFO app request method=GET path=/api/patients/ status=200 duration_ms=67.46 user_id=1
+[2026-04-11 20:09:36,359] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:09:36,359] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:09:36,363] INFO app request method=GET path=/api/media/ status=200 duration_ms=91.09 user_id=1
+[2026-04-11 20:09:36,367] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 20:09:36,367] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 20:37:27,549] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=772.79 user_id=1
+[2026-04-11 20:37:27,584] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 20:37:27,584] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 20:37:27,670] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=61.59 user_id=1
+[2026-04-11 20:37:27,672] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 20:37:27,672] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 20:37:27,917] INFO app request method=GET path=/api/media/ status=200 duration_ms=163.3 user_id=1
+[2026-04-11 20:37:27,920] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 20:37:27,920] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 20:37:27,931] INFO app request method=GET path=/api/patients/ status=200 duration_ms=167.81 user_id=1
+[2026-04-11 20:37:27,933] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:37:27,933] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:37:27,960] INFO app request method=GET path=/api/media/ status=200 duration_ms=34.08 user_id=1
+[2026-04-11 20:37:27,961] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 20:37:27,961] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 20:37:27,998] INFO app request method=GET path=/api/patients/ status=200 duration_ms=54.89 user_id=1
+[2026-04-11 20:37:28,000] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 20:37:28,000] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 22:02:52,847] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=100.56 user_id=None
+[2026-04-11 22:02:52,861] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 22:02:52,861] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 22:02:52,864] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 22:02:52,864] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 22:02:52,872] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=1.53 user_id=None
+[2026-04-11 22:02:52,875] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 22:02:52,875] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 22:02:52,877] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 22:02:52,877] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 22:02:52,904] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=17.43 user_id=None
+[2026-04-11 22:02:52,909] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 22:02:52,909] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 22:02:52,930] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=1.33 user_id=None
+[2026-04-11 22:02:52,959] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 22:02:52,959] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 22:02:53,151] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=230.72 user_id=1
+[2026-04-11 22:02:53,153] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 22:02:53,153] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 22:02:53,217] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=21.7 user_id=1
+[2026-04-11 22:02:53,220] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 22:02:53,220] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 22:02:53,403] INFO app request method=GET path=/api/media/ status=200 duration_ms=93.98 user_id=1
+[2026-04-11 22:02:53,406] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 22:02:53,406] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 22:02:53,415] INFO app request method=GET path=/api/patients/ status=200 duration_ms=100.45 user_id=1
+[2026-04-11 22:02:53,418] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 22:02:53,418] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 22:02:53,470] INFO app request method=GET path=/api/media/ status=200 duration_ms=59.77 user_id=1
+[2026-04-11 22:02:53,475] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 22:02:53,475] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 22:02:53,506] INFO app request method=GET path=/api/patients/ status=200 duration_ms=33.16 user_id=1
+[2026-04-11 22:02:53,507] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 22:02:53,507] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 23:09:35,841] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 23:09:35,849] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 23:09:35,841] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 23:09:35,849] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-11 23:09:35,924] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=56.96 user_id=None
+[2026-04-11 23:09:35,927] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 23:09:35,927] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 23:09:35,930] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 23:09:35,930] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 23:09:35,936] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=0.56 user_id=None
+[2026-04-11 23:09:35,937] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 23:09:35,937] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-11 23:09:35,938] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 23:09:35,938] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-11 23:09:35,952] INFO django.server "OPTIONS /api/auth/refresh/ HTTP/1.1" 200 0
+[2026-04-11 23:09:35,952] INFO django.server "OPTIONS /api/auth/refresh/ HTTP/1.1" 200 0
+[2026-04-11 23:09:36,002] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=13.07 user_id=None
+[2026-04-11 23:09:36,004] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=10.73 user_id=None
+[2026-04-11 23:09:36,005] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 23:09:36,005] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 23:09:36,007] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 23:09:36,007] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-11 23:09:36,398] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=380.43 user_id=1
+[2026-04-11 23:09:36,399] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 23:09:36,399] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 23:09:36,508] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=63.26 user_id=1
+[2026-04-11 23:09:36,510] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 23:09:36,510] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 23:09:36,601] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 23:09:36,601] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 23:09:36,601] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 23:09:36,601] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 23:09:36,627] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 23:09:36,627] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-11 23:09:36,630] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 23:09:36,630] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-11 23:09:36,709] INFO app request method=GET path=/api/media/ status=200 duration_ms=98.52 user_id=1
+[2026-04-11 23:09:36,717] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 23:09:36,717] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 23:09:36,726] INFO app request method=GET path=/api/patients/ status=200 duration_ms=109.6 user_id=1
+[2026-04-11 23:09:36,733] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 23:09:36,733] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 23:09:36,781] INFO app request method=GET path=/api/media/ status=200 duration_ms=37.3 user_id=1
+[2026-04-11 23:09:36,786] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 23:09:36,786] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 23:09:36,801] INFO app request method=GET path=/api/patients/ status=200 duration_ms=64.99 user_id=1
+[2026-04-11 23:09:36,803] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 23:09:36,803] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 23:09:40,850] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=38.7 user_id=1
+[2026-04-11 23:09:40,852] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 23:09:40,852] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 23:09:40,887] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=23.57 user_id=1
+[2026-04-11 23:09:40,889] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 23:09:40,889] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-11 23:09:40,967] INFO app request method=GET path=/api/media/ status=200 duration_ms=31.98 user_id=1
+[2026-04-11 23:09:40,968] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 23:09:40,968] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 23:09:40,991] INFO app request method=GET path=/api/patients/ status=200 duration_ms=49.5 user_id=1
+[2026-04-11 23:09:40,993] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 23:09:40,993] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 23:09:41,067] INFO app request method=GET path=/api/patients/ status=200 duration_ms=71.65 user_id=1
+[2026-04-11 23:09:41,069] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 23:09:41,069] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-11 23:09:41,092] INFO app request method=GET path=/api/media/ status=200 duration_ms=107.11 user_id=1
+[2026-04-11 23:09:41,094] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-11 23:09:41,094] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 08:15:24,029] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,035] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,029] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,035] INFO django.server "OPTIONS /api/auth/me/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,092] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=39.45 user_id=None
+[2026-04-12 08:15:24,094] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-12 08:15:24,094] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-12 08:15:24,097] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-12 08:15:24,097] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-12 08:15:24,104] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=1.51 user_id=None
+[2026-04-12 08:15:24,106] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-12 08:15:24,106] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-12 08:15:24,111] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-12 08:15:24,111] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-12 08:15:24,116] INFO django.server "OPTIONS /api/auth/refresh/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,116] INFO django.server "OPTIONS /api/auth/refresh/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,138] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=8.5 user_id=None
+[2026-04-12 08:15:24,142] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-12 08:15:24,142] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-12 08:15:24,178] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=2.0 user_id=None
+[2026-04-12 08:15:24,200] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-12 08:15:24,200] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-12 08:15:24,453] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=290.61 user_id=1
+[2026-04-12 08:15:24,454] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 08:15:24,454] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 08:15:24,537] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=38.83 user_id=1
+[2026-04-12 08:15:24,539] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 08:15:24,539] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 08:15:24,695] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,695] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,695] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,695] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,735] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,735] INFO django.server "OPTIONS /api/media/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,739] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,739] INFO django.server "OPTIONS /api/patients/ HTTP/1.1" 200 0
+[2026-04-12 08:15:24,801] INFO app request method=GET path=/api/media/ status=200 duration_ms=92.17 user_id=1
+[2026-04-12 08:15:24,802] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 08:15:24,802] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 08:15:24,808] INFO app request method=GET path=/api/patients/ status=200 duration_ms=83.85 user_id=1
+[2026-04-12 08:15:24,810] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 08:15:24,810] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 08:15:24,850] INFO app request method=GET path=/api/media/ status=200 duration_ms=25.89 user_id=1
+[2026-04-12 08:15:24,855] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 08:15:24,855] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 08:15:24,890] INFO app request method=GET path=/api/patients/ status=200 duration_ms=75.98 user_id=1
+[2026-04-12 08:15:24,892] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 08:15:24,892] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 08:28:51,796] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=587.25 user_id=1
+[2026-04-12 08:28:51,811] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 08:28:51,811] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 08:28:51,845] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=17.67 user_id=1
+[2026-04-12 08:28:51,847] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 08:28:51,847] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 08:28:52,079] INFO app request method=GET path=/api/media/ status=200 duration_ms=135.85 user_id=1
+[2026-04-12 08:28:52,097] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 08:28:52,097] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 08:28:52,122] INFO app request method=GET path=/api/patients/ status=200 duration_ms=172.61 user_id=1
+[2026-04-12 08:28:52,125] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 08:28:52,125] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 08:28:52,179] INFO app request method=GET path=/api/media/ status=200 duration_ms=62.4 user_id=1
+[2026-04-12 08:28:52,180] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 08:28:52,180] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 08:28:52,196] INFO app request method=GET path=/api/patients/ status=200 duration_ms=65.45 user_id=1
+[2026-04-12 08:28:52,198] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 08:28:52,198] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:16:27,546] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=151.05 user_id=None
+[2026-04-12 09:16:27,571] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-12 09:16:27,571] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-12 09:16:27,580] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-12 09:16:27,580] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-12 09:16:27,593] INFO app request method=GET path=/api/auth/me/ status=401 duration_ms=4.67 user_id=None
+[2026-04-12 09:16:27,596] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-12 09:16:27,596] WARNING django.request Unauthorized: /api/auth/me/
+[2026-04-12 09:16:27,600] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-12 09:16:27,600] WARNING django.server "GET /api/auth/me/ HTTP/1.1" 401 172
+[2026-04-12 09:16:27,668] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=10.05 user_id=None
+[2026-04-12 09:16:27,669] INFO app request method=POST path=/api/auth/refresh/ status=200 duration_ms=36.96 user_id=None
+[2026-04-12 09:16:27,671] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-12 09:16:27,671] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-12 09:16:27,674] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-12 09:16:27,674] INFO django.server "POST /api/auth/refresh/ HTTP/1.1" 200 244
+[2026-04-12 09:16:27,936] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=250.68 user_id=1
+[2026-04-12 09:16:27,937] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:16:27,937] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:16:28,005] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=23.44 user_id=1
+[2026-04-12 09:16:28,007] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:16:28,007] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:16:28,257] INFO app request method=GET path=/api/media/ status=200 duration_ms=75.35 user_id=1
+[2026-04-12 09:16:28,259] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:16:28,259] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:16:28,264] INFO app request method=GET path=/api/patients/ status=200 duration_ms=77.28 user_id=1
+[2026-04-12 09:16:28,267] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:16:28,267] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:16:28,297] INFO app request method=GET path=/api/patients/ status=200 duration_ms=26.99 user_id=1
+[2026-04-12 09:16:28,299] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:16:28,299] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:16:28,308] INFO app request method=GET path=/api/media/ status=200 duration_ms=32.49 user_id=1
+[2026-04-12 09:16:28,309] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:16:28,309] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:20:12,082] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=561.51 user_id=1
+[2026-04-12 09:20:12,099] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:20:12,099] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:20:12,177] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=54.48 user_id=1
+[2026-04-12 09:20:12,180] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:20:12,180] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:20:12,476] INFO app request method=GET path=/api/media/ status=200 duration_ms=170.93 user_id=1
+[2026-04-12 09:20:12,487] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:20:12,487] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:20:12,502] INFO app request method=GET path=/api/patients/ status=200 duration_ms=188.89 user_id=1
+[2026-04-12 09:20:12,514] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:20:12,514] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:20:12,568] INFO app request method=GET path=/api/patients/ status=200 duration_ms=48.03 user_id=1
+[2026-04-12 09:20:12,571] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:20:12,571] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:20:12,580] INFO app request method=GET path=/api/media/ status=200 duration_ms=71.82 user_id=1
+[2026-04-12 09:20:12,586] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:20:12,586] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:22:18,442] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=304.83 user_id=1
+[2026-04-12 09:22:18,452] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:22:18,452] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:22:18,505] INFO app request method=GET path=/api/auth/me/ status=200 duration_ms=21.45 user_id=1
+[2026-04-12 09:22:18,506] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:22:18,506] INFO django.server "GET /api/auth/me/ HTTP/1.1" 200 86
+[2026-04-12 09:22:18,667] INFO app request method=GET path=/api/media/ status=200 duration_ms=67.75 user_id=1
+[2026-04-12 09:22:18,684] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:22:18,684] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:22:18,691] INFO app request method=GET path=/api/patients/ status=200 duration_ms=86.15 user_id=1
+[2026-04-12 09:22:18,697] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:22:18,697] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:22:18,731] INFO app request method=GET path=/api/media/ status=200 duration_ms=27.0 user_id=1
+[2026-04-12 09:22:18,733] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:22:18,733] INFO django.server "GET /api/media/ HTTP/1.1" 200 235
+[2026-04-12 09:22:18,750] INFO app request method=GET path=/api/patients/ status=200 duration_ms=49.57 user_id=1
+[2026-04-12 09:22:18,752] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163
+[2026-04-12 09:22:18,752] INFO django.server "GET /api/patients/ HTTP/1.1" 200 163

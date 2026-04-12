@@ -95,6 +95,7 @@ The project can be run manually, but using Docker Compose is highly recommended 
 
 1.  **Build and Start Containers:**
     ```bash
+    cd docker
     docker-compose up --build
     ```
 2.  **Run Migrations inside the Container:**
