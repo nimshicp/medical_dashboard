@@ -34,6 +34,71 @@ The system uses **Django ORM** to manage the following relational structure:
 
 ---
 
+## ??Environment Configuration
+
+Before running the project, create the required environment file.
+
+📄 Backend .env
+
+Create:
+
+backend/.env
+
+Add:
+
+# Database
+DB_NAME=medical_db
+DB_USER=postgres
+DB_PASSWORD=postgres
+DB_HOST=localhost
+DB_PORT=5432
+
+# Redis (Celery Broker)
+CELERY_BROKER_URL=redis://localhost:6379/0
+
+# Django
+DJANGO_SECRET_KEY=your_secret_key
+DJANGO_DEBUG=True
+DJANGO_ALLOWED_HOSTS=127.0.0.1,localhost
+
+# Email (optional)
+EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
+
+Docker Environment
+
+Docker uses internal configuration:
+
+# Django
+DJANGO_SECRET_KEY=replace-with-a-strong-secret
+DJANGO_DEBUG=True
+DJANGO_ALLOWED_HOSTS=127.0.0.1,localhost
+
+# Database (Docker service)
+DB_NAME=medical_db
+DB_USER=postgres
+DB_PASSWORD=postgres
+DB_HOST=db
+DB_PORT=5432
+
+# Celery / Redis
+CELERY_BROKER_URL=redis://redis:6379/0
+
+# Email (safe default)
+EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
+DEFAULT_FROM_EMAIL=noreply@meddash.local
+
+# SMTP 
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
+
+⚠️ Notes
+Local setup uses localhost
+Docker uses service names (db, redis)
+Ensure correct config based on how you run the project
+
 ## ?? Core Runtime Flows
 
 ### **Authentication Sequence**
